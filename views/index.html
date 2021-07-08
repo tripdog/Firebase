@@ -1,0 +1,68 @@
+ <head>
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+     <script src="/public/script.js" defer></script>
+
+ </head>
+
+ <body class="bg-blue-600">
+     <header class="flex justify-center">
+         <h1>An awesome app</h1>
+     </header>
+
+     <main>
+         <div class="wrapper min-h-screen bg-blue-600 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+             <div class="register sm:mx-auto sm:w-full sm:max-w-md  bg-white py-6 px-4 rounded-t-md shadow">
+                 <h2 class="text-gray-400">REGISTER</h2>
+
+                 <form id="registration-form">
+                     <label class="block text-sm font-small leading-5 text-gray-700">
+                         email
+                         <input
+                             class="block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+                             name="email" type="email" required />
+                     </label>
+                     <label style="block text-sm font-small leading-5 text-gray-700">
+                         password
+                         <input
+                             class="block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+                             name="password" type="password" required />
+                     </label>
+                     <div class="btn flex justify-end">
+                         <button
+                             class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium
+                         rounded-md mt-2 text-white bg-blue-600 transition duration-150 ease-in-out" type="submit"
+                             id="register">Register</button>
+                     </div>
+                 </form>
+             </div>
+
+             <div class="login sm:mx-auto sm:w-full sm:max-w-md  bg-white py-6 px-4 rounded-b-md shadow">
+                 <h2 class="text-gray-400">LOGIN</h2>
+                 <form id="login-form">
+                     <label style="block text-sm font-small leading-5 text-gray-700">
+                         email
+                         <input
+                             class="block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+                             name="email" type="email" required />
+                     </label>
+                     <label style="block text-sm font-small leading-5 text-gray-700">
+                         password
+                         <input
+                             class="block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+                             name="password" type="password" required />
+                     </label>
+                     <div class="btn flex justify-end">
+                         <button class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium
+                         rounded-md mt-2 text-white bg-blue-600 transition duration-150 ease-in-out" type="submit"
+                             id="login">Login</button>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </main>
+ </body>
+
+ </html>
