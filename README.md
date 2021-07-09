@@ -1,5 +1,5 @@
 # Authenticate Users via Firebase
-Using Firebase allow users to create an email and password based account for 
+Using Firebase, allow users to create an email and password based account for 
 authentication. 
 
 All of it is front end code and uses basic Javascript as a means for communication
